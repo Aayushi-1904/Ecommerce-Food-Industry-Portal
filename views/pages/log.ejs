@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in/Sign Up</title>
+    <link rel="stylesheet"  type="text/css" href="./style.css">
+</head>
+<body>
+
+    <div class="login-form">
+        <h1>Sign Up/Sign In</h1>
+        <form   id="login" action="/login_send" method="post">
+            <p>Name</p>
+            <input type="text"  name="name" placeholder="sample_name"     >
+            <p>Email address</p>
+            <input type="text"  name="email" placeholder="sample@gmail.com"     >
+            <p>Password</p> 
+            <input type="password"  name="password"  placeholder="password">
+            <!-- <button type="sub">Login</button> -->
+
+
+
+            <div class="form-group checkout-small-element">
+                <p>Phone</p>
+                <input type="tel" class="form-control" id="checkout-phone" name="phone" placeholder="phone number" required>
+            </div>
+
+            <div class="form-group checkout-small-element">
+                <p>City</p>
+                <input type="text" class="form-control" id="checkout-city" name="city" placeholder="city" required>
+            </div>
+
+            <div class="form-group checkout-large-element">
+                <p>Address</p>
+                <input type="text" class="form-control" id="checkout-address" name="address" placeholder="address" required>
+            </div>
+
+            <div class="form-group login-btn-container">
+
+                <!-- task 45 -->
+                  <!-- <p>Total amount: $ <%= total %> </p> -->
+                  <input type="submit" class="btn" id="login-btn" name="login_btn" value="Submit">
+              </div>
+           </form>
+    </div>
+    
+</body>
+</html>
